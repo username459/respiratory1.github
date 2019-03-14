@@ -127,6 +127,7 @@ BreakfastsImages = [
 	  'url("https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/breakfast_breakfast-classics_big-two-do-breakfast.jpg")',
 	  'url("https://d1doqjmisr497k.cloudfront.net/-/media/mccormick-us/recipes/mccormick/q/800/quick-and-easy-french-toast-800x800.ashx?vd=20181119T193123Z&hash=003892B6BAE65C9DC3C8D08A669F1DB68FCD69B5")',
 	  'url("https://assets.epicurious.com/photos/5aa0123546f7f97233c0ba07/master/pass/breakfast-grilled-cheese-with-soft-scrambled-eggs-recipe-BA-030718.jpg")',
+	'url("https://d2gk7xgygi98cy.cloudfront.net/1873-4-facebook.jpg")',
 	  ]
 function appetizers() {
   eat = document.getElementById("food")
@@ -171,6 +172,7 @@ function Breakfasts() {
 eat.innerHTML += BreakfastsDivs[0]
 eat.innerHTML += BreakfastsDivs[1]
 eat.innerHTML += BreakfastsDivs[2]
+eat.innerHTML += BreakfastsDivs[3]
   //alert("Breakfasts!")
 	for (i=0; i<3; i=i+1) {
 		items[i].style.background = BreakfastsImages[i]
@@ -187,7 +189,7 @@ drinksDivs = [
   '<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 1<span class="price">$8</span><br /><small>Chocolate cake with chocalate fudge ad whiped cream on the side. </small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 2<span class="price">$10</span><br /><small>Chocalate cake with chocalate icing and whipped cream with chocolate chips on it.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 3 <span class="price">$7</span><br /><small>A cake with three different layers of flavors. It has vanilla, chocolate, and coffee and whipped cream with almonds on the top.</small></p></div>',  
   ]
   BreakfastsDivs = [
-  '<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 1<span class="price">$8</span><br /><small>Pancakes with syrup and butter on the top with bacon and eggs on the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 2<span class="price">$4</span><br /><small>French toast with honey on top with berries to the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 3 <span class="price">$2</span><br /><small>A grilled sheese sandwitch.</small></p></div>',  
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 1<span class="price">$8</span><br /><small>Pancakes with syrup and butter on the top with bacon and eggs on the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 2<span class="price">$4</span><br /><small>French toast with honey on top with berries to the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 3 <span class="price">$2</span><br /><small>A grilled sheese sandwitch.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 4<span class="price">$5</span><br /><small>Waffles with berries and syrup on the top.</small></p></div>',  
   ]
 
 </script>
