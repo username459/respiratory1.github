@@ -112,6 +112,7 @@ appetizersImages = [
   'url("https://d1bjorv296jxfn.cloudfront.net/s3fs-public/styles/recipes_header_image/public/375-Roasted-Ratatouille-and-Mozzarella-Appetizers.jpg?itok=MR9hitXt")',
 	'url("https://keyingredient.blob.core.windows.net/recipe/JpaiZICTmtZ1X7CgM-qfjzUp4nC7W7rnzgJaws6yRKDHt5r8x2pWN_3ZdrxFtZxTjJul-65F1MtU8XGLtMsQmOvPEak")',
 	'url("https://images-gmi-pmc.edge-generalmills.com/2f44543b-5a89-4fe0-bb35-d9559a1808ab.jpg")',
+	'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHV9HzxXljua9LPDSd7qY-rhYhWq3vB5mdqKpHLZA8Oj6FVG2J7g")',
 	]
 drinksImages = [
   'url("https://tipsybartender.com/wp-content/uploads/2018/01/Caribbean-Sunset.jpg")',
@@ -136,6 +137,7 @@ function appetizers() {
 eat.innerHTML += appetizersDivs[0]
 eat.innerHTML += appetizersDivs[1]
 eat.innerHTML += appetizersDivs[2]
+eat.innerHTML += appetizersDivs[3]
   //alert("appetizers!")
   items = document.getElementsByClassName("item")
 	for (i=0; i<3; i=i+1) {
@@ -176,22 +178,28 @@ eat.innerHTML += BreakfastsDivs[2]
 eat.innerHTML += BreakfastsDivs[3]
 eat.innerHTML += BreakfastsDivs[4]
   //alert("Breakfasts!")
-	for (i=0; i<3; i=i+1) {
+	for (i=0; i<3; i=i+1; ) {
 		items[i].style.background = BreakfastsImages[i]
 		items[i].style.backgroundSize = '100% 100%'
 		}
 }
 appetizersDivs = [
-'<div class="item"onclick=this.classList.toggle("show-description")><p>Appetizers 1<span class="price">$8</span><br /><small>An appetizers with eggplants, zucchini, peppers, with cheese on the top, etc. </small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Appetizers 2<span class="price">$12</span><br /><small>Crescent rolls with many different ingredients for example:mozerella balls, grape tomatoes, basil leaf piece.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>appetizers 3 <span class="price">$5</span><br /><small>crescent roll with meatball and sauce and a piece of avocato on it.</small></p></div>',
+'<div class="item" onclick=this.classList.toggle("show-description")><p>Appetizers 1<span class="price">$8</span><br /><small>An appetizers with eggplants, zucchini, peppers, with cheese on the top, etc. </small></p></div>',
+'<div class="item" onclick=this.classList.toggle("show-description")><p>Appetizers 2<span class="price">$12</span><br /><small>Crescent rolls with many different ingredients for example:mozerella balls, grape tomatoes, basil leaf piece.</small></p></div>',
+'<div class="item" onclick=this.classList.toggle("show-description")><p>appetizers 3 <span class="price">$5</span><br /><small>crescent roll with meatball and sauce and a piece of avocato on it.</small></p></div>',
 ]
 drinksDivs = [
-  '<div class="item"onclick=this.classList.toggle("show-description")><p>drinks 1<span class="price">$14</span><br /><small>Drink with blue on the top and yellow on the top with a lemon on it. </small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>drinks 2<span class="price">$22</span><br /><small>A drink made of tequilla. It has tequilla, fresh orange juice and grenadine.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>drinks 3 <span class="price">$8</span><br /><small>A fruit punch with a variety of different types of tropical fruit juice and oranges on it.</small></p></div>',  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>drinks 1<span class="price">$14</span><br /><small>Drink with blue on the top and yellow on the top with a lemon on it. </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>drinks 2<span class="price">$22</span><br /><small>A drink made of tequilla. It has tequilla, fresh orange juice and grenadine.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>drinks 3 <span class="price">$8</span><br /><small>A fruit punch with a variety of different types of tropical fruit juice and oranges on it.</small></p></div>',  
   ]
   dessertsDivs = [
-  '<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 1<span class="price">$8</span><br /><small>Chocolate cake with chocalate fudge ad whiped cream on the side. </small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 2<span class="price">$10</span><br /><small>Chocalate cake with chocalate icing and whipped cream with chocolate chips on it.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>desserts 3 <span class="price">$7</span><br /><small>A cake with three different layers of flavors. It has vanilla, chocolate, and coffee and whipped cream with almonds on the top.</small></p></div>',  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>desserts 1<span class="price">$8</span><br /><small>Chocolate cake with chocalate fudge ad whiped cream on the side. </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>desserts 2<span class="price">$10</span><br /><small>Chocalate cake with chocalate icing and whipped cream with chocolate chips on it.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>desserts 3 <span class="price">$7</span><br /><small>A cake with three different layers of flavors. It has vanilla, chocolate, and coffee and whipped cream with almonds on the top.</small></p></div>',  
   ]
   BreakfastsDivs = [
-  '<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 1<span class="price">$8</span><br /><small>Pancakes with syrup and butter on the top with bacon and eggs on the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 2<span class="price">$4</span><br /><small>French toast with honey on top with berries to the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 3 <span class="price">$2</span><br /><small>A grilled sheese sandwitch.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 4 <span class="price">$2</span><br /><small>Cereal with milk.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 5<span class="price">$3</span><br /><small>Waffles with butter on it.</small></p></div>',  
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Breakfasts 1<span class="price">$8</span><br /><small>Pancakes with syrup and butter on the top with bacon and eggs on the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 2<span class="price">$4</span><br /><small>French toast with honey on top with berries to the side.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 3 <span class="price">$2</span><br /><small>A grilled sheese sandwitch.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 4 <span class="price">$2</span><br /><small>Cereal with milk.</small></p></div>','<div class="item"onclick=this.classList.toggle("show-description")><p>Breakfasts 5<span class="price">$3</span><br /><small>Waffles with butter on it.</small></p></div>',  
   ]
 
 </script>
