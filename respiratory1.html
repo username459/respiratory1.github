@@ -55,19 +55,15 @@ p {
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
 }
-
 small {
   opacity: 0;
 }
-
 .show-description p {
   height: 150px;
 }
-
 .show-description small {
   opacity: 1;
 }
-
 .price {
   float: right;
 }
@@ -92,7 +88,6 @@ small {
     font-size: 16px;
   }
 }
-
 </style>
 
 </head>
@@ -131,11 +126,11 @@ BreakfastsImages = [
 	  'url("https://www.sciencedaily.com/images/2018/08/180820085243_1_540x360.jpg")',
 	  'url("https://bakingamoment.com/wp-content/uploads/2018/07/IMG_9117-fluffy-buttermilk-waffles-from-scratch-horizontal.jpg")',
 	  ]
-
 appetizersDivs = [
 '<div class="item" onclick=this.classList.toggle("show-description")><p>Appetizers 1<span class="price">$8</span><br /><small>An appetizers with eggplants, zucchini, peppers, with cheese on the top, etc. </small></p></div>',
 '<div class="item" onclick=this.classList.toggle("show-description")><p>Appetizers 2<span class="price">$12</span><br /><small>Crescent rolls with many different ingredients for example:mozerella balls, grape tomatoes, basil leaf piece.</small></p></div>',
 '<div class="item" onclick=this.classList.toggle("show-description")><p>appetizers 3 <span class="price">$5</span><br /><small>crescent roll with meatball and sauce and a piece of avocato on it.</small></p></div>',
+'<div class="item" onclick=this.classList.toggle("show-description")><p>appetizers 4 <span class="price">$4.50</span><br /><small>Wontons in the shape of a triangle.</small></p></div>',
 	
 ]
 drinksDivs = [
@@ -165,7 +160,7 @@ eat.innerHTML += appetizersDivs[2]
 eat.innerHTML += appetizersDivs[3]
   //alert("appetizers!")
   items = document.getElementsByClassName("item")
-	for (i=0; i<3; i=i+1) {
+	for (i=0; i<4; i=i+1) {
 		items[i].style.background = appetizersImages[i]
 		items[i].style.backgroundSize = '100% 100%'
 		}
@@ -203,13 +198,11 @@ eat.innerHTML += BreakfastsDivs[2]
 eat.innerHTML += BreakfastsDivs[3]
 eat.innerHTML += BreakfastsDivs[4]
   //alert("Breakfasts!")
-	for (i=0; i<5; i=i+1; ) {
+	for (i=0; i<5; i=i+1) {
 		items[i].style.background = BreakfastsImages[i]
 		items[i].style.backgroundSize = '100% 100%'
 		}
 }
-
-
 </script>
 
 </body>
